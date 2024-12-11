@@ -44,29 +44,40 @@ public class Main {
          int choix;
 
 		do{
-         Scanner scanner = new Scanner(System.in);
-         System.out.println("Enter num 1 : ");
-         x = scanner.nextDouble();
-         System.out.println("Enter num 2 : ");
-         y = scanner.nextDouble();
-
-		 menu();
-		 System.out.println("Enter voter choix : ");
-         choix = scanner.nextInt();
+         menu();
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Enter voter choix : ");
+        choix = scanner.nextInt();
          switch (choix){
          case 1 :
+		 System.out.println("Enter premier num : ");
+                 x = scanner.nextDouble();
+                 System.out.println("Enter deuxiem num : ");
+                 y = scanner.nextDouble();
                  rs = addtion(x,y);
                  System.out.println("le resultat est :"+rs);
         	 break;
 	 case 2 :
+		 System.out.println("Enter premier num : ");
+                 x = scanner.nextDouble();
+                 System.out.println("Enter deuxiem num : ");
+                 y = scanner.nextDouble();
                  rs = soustraction(x,y);
                  System.out.println("le resultat est :"+rs);
                  break;
          case 3:
+		 System.out.println("Enter premier num : ");
+                 x = scanner.nextDouble();
+                 System.out.println("Enter deuxiem num : ");
+                 y = scanner.nextDouble();
                  rs = multiplication(x,y);
                  System.out.println("le resultat est :"+rs);
                  break;
 	 case 4 :
+		 System.out.println("Enter premier num : ");
+                 x = scanner.nextDouble();
+                 System.out.println("Enter deuxiem num : ");
+                 y = scanner.nextDouble();
                  if(y==0){
                      System.out.println("Syntaxe Erorr");
                  }else{
@@ -75,19 +86,27 @@ public class Main {
                  }
                break;
          case 5:
-                    rs = puissance(x,y);
-                    System.out.println("le resultat est :"+rs);
+	       System.out.println("Enter premier num : ");
+                 x = scanner.nextDouble();
+                 System.out.println("Enter deuxiem num : ");
+                 y = scanner.nextDouble();
+                 rs = puissance(x,y);
+                 System.out.println("le resultat est :"+rs);
                  break;
 	 case 6 :
-                    rs = racineCarre(x,y);
-                    System.out.println("le resultat est :"+rs);
+		 System.out.println("Enter premier num : ");
+                 x = scanner.nextDouble();
+                 rs = racineCarre(x);
+                 System.out.println("le resultat est :"+rs);
                     break;
 	 case 7 :
-		    rs = factoriel(x);
-                    System.out.println("le resultat rst : "+rs);
+		 System.out.println("Enter premier num : ");
+                 x = scanner.nextDouble();
+		 rs = factoriel(x);
+                 System.out.println("le resultat rst : "+rs);
                     break;
 	 case 8 :
-                    System.out.println("******mercii de votre visite*******");
+                 System.out.println("******mercii de votre visite*******");
                     break;	    
 	 default:
                  System.out.println("Choix invalide ");
