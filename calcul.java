@@ -37,6 +37,7 @@ public class Main {
 	System.out.println("5-puissance");
 	System.out.println("6-racine carree");
 	System.out.println("7-factoriel");
+	system.out.println("8-quitter");
     }
 	public static void main(String[] args){
         double x,y,rs;
@@ -85,10 +86,13 @@ public class Main {
 		    rs = factoriel(x);
                     System.out.println("le resultat rst : "+rs);
                     break;
+	 case 8 :
+                    System.out.println("******mercii de votre visite*******");
+                    break;	    
 	 default:
                  System.out.println("Choix invalide ");
 		 }
-         }while (choix !=7);
+         }while (choix !=8);
 
 	    }
 }
