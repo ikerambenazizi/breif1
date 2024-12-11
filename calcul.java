@@ -18,6 +18,14 @@ public class Main {
     static double racineCarre(double a ,double b){
         return Math.sqrt(a);
     }
+    static double factoriel(double a){
+        int i,x;
+        x=1;
+        for(i=1;i<a;i++){
+            x=x*i;
+        }
+        return  x;
+    }
 	 static  void menu(){
 
         System.out.println("1-addition");
@@ -26,6 +34,7 @@ public class Main {
 	System.out.println("4-division");
 	System.out.println("5-puissance");
 	System.out.println("6-racine carree");
+	System.out.println("7-factoriel");
     }
 	public static void main(String[] args){
         double x,y,rs;
@@ -62,7 +71,7 @@ public class Main {
                      System.out.println("le resultat est :"+rs);
                  }
                break;
-        case 5:
+         case 5:
                     rs = puissance(x,y);
                     System.out.println("le resultat est :"+rs);
                  break;
@@ -70,10 +79,14 @@ public class Main {
                     rs = racineCarre(x,y);
                     System.out.println("le resultat est :"+rs);
                     break;
-	default:
+	 case 7 :
+		    rs = factoriel(x);
+                    System.out.println("le resultat rst : "+rs);
+                    break;
+	 default:
                  System.out.println("Choix invalide ");
 		 }
-        }while (choix !=7);
+         }while (choix !=7);
 
 	    }
 }
