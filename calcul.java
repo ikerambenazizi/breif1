@@ -15,6 +15,9 @@ public class Main {
     static double puissance(double a ,double b){
         return Math.pow(a,b);
     }
+    static double racineCarre(double a ,double b){
+        return Math.sqrt(a);
+    }
 	 static  void menu(){
 
         System.out.println("1-addition");
@@ -22,6 +25,7 @@ public class Main {
         System.out.println("3-multiplication");
 	System.out.println("4-division");
 	System.out.println("5-puissance");
+	System.out.println("6-racine carree");
     }
 	public static void main(String[] args){
         double x,y,rs;
@@ -62,11 +66,14 @@ public class Main {
                     rs = puissance(x,y);
                     System.out.println("le resultat est :"+rs);
                  break;
-	 
+	 case 6 :
+                    rs = racineCarre(x,y);
+                    System.out.println("le resultat est :"+rs);
+                    break;
 	default:
                  System.out.println("Choix invalide ");
 		 }
-        }while (choix !=6);
+        }while (choix !=7);
 
 	    }
 }
