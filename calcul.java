@@ -12,12 +12,16 @@ public class Main {
     static double division(double a ,double b){
         return a/b;
     }
+    static double puissance(double a ,double b){
+        return Math.pow(a,b);
+    }
 	 static  void menu(){
 
         System.out.println("1-addition");
 	System.out.println("2-soustraction");
         System.out.println("3-multiplication");
 	System.out.println("4-division");
+	System.out.println("5-puissance");
     }
 	public static void main(String[] args){
         double x,y,rs;
@@ -54,12 +58,15 @@ public class Main {
                      System.out.println("le resultat est :"+rs);
                  }
                break;
-
+        case 5:
+                    rs = puissance(x,y);
+                    System.out.println("le resultat est :"+rs);
+                 break;
 	 
 	default:
                  System.out.println("Choix invalide ");
 		 }
-        }while (choix !=4);
+        }while (choix !=6);
 
 	    }
 }
