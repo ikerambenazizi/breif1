@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.lang.Math;
+
 public class Main {
 	static double addtion(double a , double b){
         return  a+b;
