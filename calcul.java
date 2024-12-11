@@ -9,11 +9,15 @@ public class Main {
     static double multiplication(double a , double b){
         return a*b;
     }
+    static double division(double a ,double b){
+        return a/b;
+    }
 	 static  void menu(){
 
         System.out.println("1-addition");
 	System.out.println("2-soustraction");
         System.out.println("3-multiplication");
+	System.out.println("4-division");
     }
 	public static void main(String[] args){
         double x,y,rs;
@@ -42,6 +46,16 @@ public class Main {
                  rs = multiplication(x,y);
                  System.out.println("le resultat est :"+rs);
                  break;
+	 case 4 :
+                 if(y==0){
+                     System.out.println("Syntaxe Erorr");
+                 }else{
+                     rs = division(x,y);
+                     System.out.println("le resultat est :"+rs);
+                 }
+               break;
+
+	 
 	default:
                  System.out.println("Choix invalide ");
 		 }
