@@ -78,12 +78,12 @@ public class Main {
                  x = scanner.nextDouble();
                  System.out.println("Enter deuxiem num : ");
                  y = scanner.nextDouble();
-                 if(y==0){
-                     System.out.println("Syntaxe Erorr");
-                 }else{
-                     rs = division(x,y);
-                     System.out.println("le resultat est :"+rs);
-                 }
+                 do {
+                     System.out.println("impossible de diviser par 0// entrer le deuxiem num :");
+                     y = scanner.nextDouble();
+                 }while(y == 0);
+                 rs = division(x, y);
+                 System.out.println("le resultat est :" + rs);
                break;
          case 5:
 	       System.out.println("Enter premier num : ");
